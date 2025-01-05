@@ -1,0 +1,224 @@
+/* Estilo principal de los ComboBox */
+.combo-box {
+    -fx-font-family: "Tahoma";          /* Fuente Tahoma */
+    -fx-font-size: 13px;                /* Tamaño de fuente 13px */
+    -fx-font-weight: bold;              /* Texto en negrita */
+    -fx-text-fill: #202020;
+    -fx-background-color: linear-gradient(to bottom, #dcdcdc, #ffffff);  /* Degradado de blanco a gris claro */
+    -fx-border-radius: 6px;              /* Bordes redondeados */
+    -fx-background-radius: 6px;          /* Bordes redondeados */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.20), 2, 0, 0, 3); /* Sombra más sutil */
+}
+
+.combo-box:hover {
+    -fx-effect: dropshadow(gaussian, rgb(26, 173, 218), 2, 0, 0, 3); /* Sombra más sutil */
+}
+
+.combo-box:focused {
+    -fx-background-color: linear-gradient(to bottom, #d0d0d0, #efefef);  /* Degradado de blanco a gris claro */
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent; /* Fondo transparente para las celdas no seleccionadas */
+    -fx-font-family: "Tahoma";
+    -fx-font-weight: normal;
+}
+
+.combo-box .list-cell:selected {
+    -fx-font-family: "Tahoma";          /* Fuente Tahoma */
+    -fx-font-size: 13px;                /* Tamaño de fuente 13px */
+    -fx-font-weight: bold;
+    -fx-text-fill: #202020;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #617445;
+    -fx-text-fill: #ffffff;
+}
+
+
+/* Estilo principal del TextField */
+.text-field {
+    -fx-font-family: "Tahoma";          /* Fuente Tahoma */
+    -fx-font-size: 13px;                /* Tamaño de fuente 13px */
+    -fx-font-weight: bold;              /* Texto en negrita */
+    -fx-text-fill: #202020;
+    -fx-background-color: linear-gradient(to bottom, #dcdcdc, #ffffff);
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #c2c2c2;
+    -fx-border-width: 1px;
+    -fx-accent: #617445;
+    -fx-highlight-text-fill: #ffffff;
+}
+
+.text-field:hover {
+    -fx-border-color: #1aadda;
+    -fx-border-width: 2px;
+}
+
+.text-field:focused {
+    -fx-border-color: #1aadda;
+    -fx-border-width: 2px;
+}
+
+
+/* Estilo principal de los botones */
+.button {
+    -fx-font-family: "Tahoma";          /* Fuente Tahoma */
+    -fx-font-size: 13px;                /* Tamaño de fuente 13px */
+    -fx-font-weight: bold;              /* Texto en negrita */
+    -fx-text-fill: #ffffff;
+    -fx-background-color: linear-gradient(to bottom, #303c10, #434e17);
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: rgb(85, 103, 41);
+}
+
+.button:pressed {
+    -fx-background-color: #252c0f;  /* Color más oscuro cuando se presiona */
+}
+
+
+/* Estilo para botón info */
+.btnAbout {
+    -fx-background-image: url("../icons/AboutIcon.png");
+    -fx-background-color: transparent;
+}
+
+.btnAbout:hover {
+    -fx-background-image: url("../icons/AboutIcon.png");
+    -fx-background-color: transparent;
+}
+
+.btnAbout:selected {
+    -fx-background-image: url("../icons/AboutIcon.png");
+    -fx-background-color: transparent;
+}
+
+.btnAbout:focused {
+    -fx-background-color: transparent;
+}
+
+.btnAbout:pressed {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../icons/AboutIcon.png");
+}
+
+
+/* Estilo para botón exit */
+.btnExit {
+    -fx-background-image: url("../icons/btnClo.png");
+    -fx-background-color: transparent;
+}
+
+.btnExit:hover {
+    -fx-background-image: url("../icons/btnCloROLL.png");
+    -fx-background-color: transparent;
+}
+.btnExit:selected {
+    -fx-background-image: url("../icons/btnCloPRESS.png");
+    -fx-background-color: transparent;
+}
+
+.btnExit:pressed {
+    -fx-background-image: url("../icons/btnCloPRESS.png");
+    -fx-background-color: transparent; /* Asegura que no haya color de fondo */
+}
+
+
+.btnExit:focused {
+    -fx-background-color: transparent; /* Elimina el fondo cuando se enfoca */
+}
+
+
+/* Estilo para el text area */
+.text-area {
+    -fx-font-family: "Tahoma";          /* Fuente Tahoma */
+    -fx-font-size: 13px;                /* Tamaño de fuente 13px */
+    -fx-font-weight: bold;              /* Texto en negrita */
+    -fx-text-fill: #202020;
+    -fx-background-color: #f0f0f0;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-highlight-text-fill: #202020;
+    -fx-highlight-fill: transparent;
+    -fx-display-caret: false;
+    -fx-cursor: arrow;
+}
+
+.text-area .content {
+    -fx-background-color: #f0f0f0;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-display-caret: false;
+    -fx-cursor: arrow;
+}
+
+.text-area .text {
+    -fx-font-weight: bold; /* Texto en negrita */
+    -fx-text-alignment: center;
+}
+
+
+/* Estilo para el boton PayPal */
+.btnPayPal {
+    -fx-background-image: url("../images/PayPal.png");
+    -fx-background-color: transparent;
+}
+
+.btnPayPal:hover {
+    -fx-background-image: url("../images/PayPal.png");
+    -fx-background-color: transparent;
+}
+.btnPayPal:selected {
+    -fx-background-image: url("../images/PayPal.png");
+    -fx-background-color: transparent;
+}
+
+.btnPayPal:pressed {
+    -fx-background-image: url("../images/PayPal.png");
+    -fx-background-color: transparent;
+}
+
+
+/* Estilo para el boton Buy Me A Coffee */
+.btnBuyMe {
+    -fx-background-image: url("../images/BuyMeC.png");
+    -fx-background-color: transparent;
+}
+
+.btnBuyMe:hover {
+    -fx-background-image: url("../images/BuyMeC.png");
+    -fx-background-color: transparent;
+}
+.btnBuyMe:selected {
+    -fx-background-image: url("../images/BuyMeC.png");
+    -fx-background-color: transparent;
+}
+
+.btnBuyMe:pressed {
+    -fx-background-image: url("../images/BuyMeC.png");
+    -fx-background-color: transparent;
+}
+
+
+/* Estilo para el cuadro de alertas */
+.custom-alert {
+    -fx-font-family: "Tahoma";          /* Fuente Tahoma */
+    -fx-font-size: 16px;                /* Tamaño de fuente 13px */
+    -fx-font-weight: normal;              /* Texto en negrita */
+}
+
+.custom-alert .header-panel {
+    -fx-font-family: "Tahoma";          /* Fuente Tahoma */
+    -fx-font-size: 18px;                /* Tamaño de fuente 13px */
+    -fx-font-weight: bold;              /* Texto en negrita */
+}
+
+.custom-alert .label {
+    -fx-text-fill: #0f0f0f;
+    -fx-font-family: "Tahoma";          /* Fuente Tahoma */
+}

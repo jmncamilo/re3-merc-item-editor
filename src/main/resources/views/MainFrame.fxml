@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainFrameControl">
+   <children>
+      <ImageView fx:id="bgImg" fitHeight="600.0" fitWidth="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bdNemy.png" />
+         </image></ImageView>
+      <Label fx:id="lblChar" layoutX="310.0" layoutY="69.0" prefHeight="37.0" prefWidth="218.0" style="-fx-font-weight: bold;" text="Select Character" textFill="#0f0f0f">
+         <font>
+            <Font name="Tahoma" size="23.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sepSelect" layoutX="324.0" layoutY="106.0" prefHeight="4.0" prefWidth="426.0" />
+      <ImageView fx:id="bgCarlos" fitHeight="100.0" fitWidth="100.0" layoutX="331.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/carlos_min.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bgMikhail" fitHeight="100.0" fitWidth="100.0" layoutX="486.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mikhail_min.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bgNicholai" fitHeight="100.0" fitWidth="100.0" layoutX="638.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nicholai_min.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="rdCarlos" layoutX="324.0" layoutY="136.0" mnemonicParsing="false" onAction="#selectCarlos" text="Carlos Oliveira">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdMikhail" layoutX="482.0" layoutY="136.0" mnemonicParsing="false" onAction="#selectMikhail" text="Mikhail Victor">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdNicholai" layoutX="622.0" layoutY="136.0" mnemonicParsing="false" onAction="#selectNicholai" text="Nicholai Ginovaef">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lblChange" layoutX="310.0" layoutY="322.0" prefHeight="37.0" prefWidth="218.0" style="-fx-font-weight: bold;" text="Change Items" textFill="#0f0f0f">
+         <font>
+            <Font name="Tahoma" size="23.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sepChange" layoutX="324.0" layoutY="359.0" prefHeight="4.0" prefWidth="426.0" />
+      <ComboBox fx:id="cbSlotSelector" layoutX="324.0" layoutY="421.0" maxHeight="47.0" onAction="#selectionSlot" prefHeight="28.0" prefWidth="89.0" promptText="None" styleClass="combo-box" stylesheets="@../css/styles.css" visibleRowCount="6" />
+      <TextField fx:id="txtQty" layoutX="584.0" layoutY="421.0" prefHeight="32.0" prefWidth="53.0" stylesheets="@../css/styles.css">
+         <font>
+            <Font name="Tahoma" size="13.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cbItemId" layoutX="422.0" layoutY="421.0" maxHeight="47.0" onAction="#selectionItem" prefHeight="28.0" prefWidth="154.0" promptText="None" styleClass="combo-box" stylesheets="@../css/styles.css" visibleRowCount="6" />
+      <ComboBox fx:id="cbDispColor" layoutX="645.0" layoutY="421.0" maxHeight="47.0" onAction="#selectionColor" prefHeight="28.0" prefWidth="104.0" promptText="None" styleClass="combo-box" stylesheets="@../css/styles.css" visibleRowCount="6" />
+      <Label fx:id="lblTitle1" alignment="CENTER" layoutX="319.0" layoutY="386.0" prefHeight="20.0" prefWidth="100.0" style="-fx-font-weight: bold;" text="Slot Selector" textFill="#404040">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTitle2" alignment="CENTER" layoutX="479.0" layoutY="386.0" prefHeight="20.0" prefWidth="40.0" style="-fx-font-weight: bold;" text="Item" textFill="#404040">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTitle3" alignment="CENTER" layoutX="591.0" layoutY="386.0" prefHeight="20.0" prefWidth="40.0" style="-fx-font-weight: bold;" text="Qty" textFill="#404040">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTitle4" alignment="CENTER" layoutX="677.0" layoutY="386.0" prefHeight="20.0" prefWidth="40.0" style="-fx-font-weight: bold;" text="Color" textFill="#404040">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="646.0" layoutY="481.0" mnemonicParsing="false" onAction="#click" prefHeight="32.0" prefWidth="104.0" stylesheets="@../css/styles.css" text="SAVE">
+         <font>
+            <Font name="Tahoma" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
