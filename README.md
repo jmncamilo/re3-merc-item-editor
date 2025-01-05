@@ -57,5 +57,12 @@ remain unchanged. This tool only modifies the actual in-game items.*
 
 This software is distributed under the terms of the GNU Affero General Public License v3.0 (AGPLv3). A copy of this license can be found in the [LICENSE](LICENSE) file. The AGPLv3 guarantees your freedoms to use, study, share, and modify this software. However, it also requires that any derivative works based on this software be distributed under the same license terms.
 
-[![License](https://img.shields.io/badge/AGPLv3-AGPLv3?style=social&logo=gnu&logoColor=%23A42E2B&logoSize=20&label=License)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[![License](https://img.shields.io/badge/AGPLv3-AGPLv3?style=social&logo=gnu&logoColor=%23A42E2B&logoSize=20&label=License)](https://www.gnu.org/licenses/agpl-3.0.en.html)
 
+## 🛠 Technology
+
+Developed and built in Java using Oracle's JDK v23.0.1 and JavaFX framework v23.0.1.
+
+## 👨🏻‍💻 Credits
+
+Developed by Camilo Jiménez a.k.a. Mystic. This project is the result of my independent work and does not include external contributions.
