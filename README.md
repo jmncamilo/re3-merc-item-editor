@@ -52,3 +52,10 @@ On the next screen, you will need to perform the following steps:
 remain unchanged. This tool only modifies the actual in-game items.*
 >>
 >>Some items may not render correctly in-game. For example, some weapons might appear invisible in the player's hand, but they still fire bullets. I suppose Capcom developers limited certain objects to the Mercenaries game mode to save memory. You may encounter bugs with other items. Please test thoroughly and share your findings with the community.
+
+## 🔐 License
+
+This software is distributed under the terms of the GNU Affero General Public License v3.0 (AGPLv3). A copy of this license can be found in the [LICENSE](LICENSE) file. The AGPLv3 guarantees your freedoms to use, study, share, and modify this software. However, it also requires that any derivative works based on this software be distributed under the same license terms.
+
+[![License](https://img.shields.io/badge/AGPLv3-AGPLv3?style=social&logo=gnu&logoColor=%23A42E2B&logoSize=20&label=License)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
